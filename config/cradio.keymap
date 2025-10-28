@@ -52,16 +52,16 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │  7       │  8       │  9       │          │   │ HOME     │ UP       │ END      │ PAGE UP  │  :       │
-            &kp ESC     &kp N7     &kp N8     &kp N9     &trans         &kp HOME   &kp UP     &kp END    &kp PG_UP  &kp COLON
+        //│ ESC      │  7       │  8       │  9       │ %       │   │ HOME     │ UP       │ END      │ PAGE UP  │  :       │
+            &kp ESC     &kp N7     &kp N8     &kp N9    &kp PRCNT         &kp HOME   &kp UP     &kp END    &kp PG_UP  &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ TAB      │  4       │  5       │  6       │ 0        │   │ LEFT     │ DOWN     │ RIGHT    │ PAGE DN  │  ;       │
             &kp TAB    &kp N4     &kp N5     &kp N6     &kp N0         &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ SLEEP    │  1       │  2       │  3       │          │   │          │          │          │          │          │
-           &kp K_SLEEP  &kp N1     &kp N2     &kp N3     &trans         &trans     &trans     &trans     &trans     &trans
+        //│ SLEEP    │  1       │  2       │  3       │ . >      │   │          │          │          │          │          │
+           &kp K_SLEEP  &kp N1     &kp N2     &kp N3    &kp DOT         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp         &trans     &trans
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
